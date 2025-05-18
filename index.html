@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khamsang Hotel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Khamsang Hotel</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Who We Are</h2>
+    <p>
+      We are a dynamic hotel committed to providing exceptional guest experiences by partnering with institutions and seeking talented individuals to join our team.
+    </p>
+    <p>
+      Our website facilitates partnerships with institutions and provides a platform for job seekers to apply.
+    </p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Email: khamsanghotel907@gmail.com</p>
+    <p>Phone: 17754628</p>
+    <form action="https://formspree.io/f/mqaqnryl" method="POST">
+      <label for="feedback">Your Feedback:</label><br />
+      <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="jobs">
+    <h2>Job Application (Independent Candidates)</h2>
+    <form action="https://formspree.io/f/mqaqnryl" method="POST" enctype="multipart/form-data">
+      <input type="text" name="name" placeholder="Full Name" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="text" name="contact" placeholder="Contact Number" required><br>
+      <input type="text" name="cid" placeholder="CID" required><br>
+      <input type="file" name="resume" accept="application/pdf" required><br>
+      <button type="submit">Submit Application</button>
+    </form>
+  </section>
+
+  <section id="internships">
+    <h2>Training Institute Applicants</h2>
+    <form action="https://formspree.io/f/mqaqnryl" method="POST" enctype="multipart/form-data">
+      <input type="text" name="fullname" placeholder="Full Name" required><br>
+      <input type="text" name="contact" placeholder="WhatsApp Contact Number" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+
+      <label>Training Institute:</label>
+      <select name="institute" required>
+        <option value="Royal">Royal Institute for Tourism and Hospitality</option>
+        <option value="Bhutan">Bhutan Institute for Tourism and Hospitality</option>
+        <option value="NLD">NLD Training Institute</option>
+      </select><br>
+
+      <label>Program:</label>
+      <select name="program" required>
+        <option value="Cooking">Cooking</option>
+        <option value="FNB">FNB</option>
+        <option value="Housekeeping">Housekeeping</option>
+        <option value="Front Office">Front Office and Reservation</option>
+      </select><br>
+
+      <label>Preferred Internship Dates:</label>
+      <input type="text" name="dates" required><br>
+
+      <label>Upload Resume (PDF only):</label>
+      <input type="file" name="resume" accept="application/pdf" required><br>
+
+      <label>Upload Recommendation Letter (PDF/Image):</label>
+      <input type="file" name="recommendation" accept="application/pdf,image/*" required><br>
+
+      <label>Why do you want to intern?</label><br>
+      <textarea name="motivation" rows="4" required></textarea><br>
+
+      <button type="submit">Submit Internship Application</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Khamsang Hotel</p>
+  </footer>
+
+  
+</body>
+</html>
