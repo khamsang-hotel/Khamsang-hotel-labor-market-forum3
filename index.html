@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khamsang Hotel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header, nav, footer {
+      background: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    main {
+      padding: 2em;
+    }
+    section {
+      margin-bottom: 3em;
+    }
+    .form-link, .feedback-form {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .form-link a {
+      display: inline-block;
+      background: #333;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    h2 {
+      text-align: center;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #555;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Khamsang Hotel Logo" style="height: 50px;">
+    <h1>Khamsang Hotel</h1>
+    <p>Delivering Excellence in Hospitality</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#job">Job Application</a>
+    <a href="#institute">Institute Application</a>
+    <a href="#feedback">Feedback</a>
+  </nav>
+
+  <main>
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>We are a dynamic hotel committed to exceptional guest experiences by partnering with institutions and seeking talented individuals to join our team.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Our goal is to create a skilled workforce that ensures top-notch service and satisfaction for every guest.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Phone: 17754628</p>
+      <p>Email: <a href="mailto:khamsanghotel907@gmail.com">khamsanghotel907@gmail.com</a></p>
+    </section>
+
+    <section id="job">
+      <h2>Job Application (Independent Candidates)</h2>
+      <div class="form-link">
+        <a href="https://forms.gle/K27eQ7RGRKAWzBpC7" target="_blank">Apply via Google Form</a>
+      </div>
+    </section>
+
+    <section id="institute">
+      <h2>Training Institute Internship Application</h2>
+      <div class="form-link">
+        <a href="https://forms.gle/WD189RAAKN9iddyh6" target="_blank">Submit Internship Application</a>
+      </div>
+    </section>
+
+    <section id="feedback">
+      <h2>Feedback</h2>
+      <p style="text-align:center;">We value your feedback! Please let us know about your experience.</p>
+      <form action="https://formspree.io/f/mqaqnryl" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+
+        <label for="rating">Rating (1 = Poor, 5 = Excellent):</label>
+        <select name="rating" id="rating" required>
+          <option value="">Choose rating</option>
+          <option value="1">1 ★</option>
+          <option value="2">2 ★★</option>
+          <option value="3">3 ★★★</option>
+          <option value="4">4 ★★★★</option>
+          <option value="5">5 ★★★★★</option>
+        </select>
+
+        <label for="visit-date">Date of Visit:</label>
+        <input type="date" id="visit-date" name="visit_date" required>
+
+        <textarea name="message" rows="5" placeholder="Your Feedback" required></textarea>
+
+        <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html">
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Khamsang Hotel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
