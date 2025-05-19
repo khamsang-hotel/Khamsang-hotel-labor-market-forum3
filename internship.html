@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internship Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Internship Application Form</h1>
+    <nav><a href="index.html">Home</a></nav>
+  </header>
+  <main class="container">
+    <form action="https://formspree.io/f/mqaqnryl" method="POST" enctype="multipart/form-data">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="tel" name="contact" placeholder="WhatsApp Number" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <label>Training Institute:</label>
+      <select name="institute" required>
+        <option value="">-- Select Institute --</option>
+        <option>Royal Institute for Tourism and Hospitality</option>
+        <option>Bhutan Institute for Tourism and Hospitality</option>
+        <option>NLD Training Institute</option>
+      </select>
+      <label>Current Program:</label>
+      <select name="program" required>
+        <option value="">-- Select Program --</option>
+        <option>Cooking</option>
+        <option>FNB</option>
+        <option>Housekeeping</option>
+        <option>Front Office and Reservation</option>
+      </select>
+      <input type="text" name="dates" placeholder="Preferred Internship Dates" required>
+      <label>Upload Resume (PDF):</label>
+      <input type="file" name="resume" accept=".pdf" required>
+      <label>Upload Recommendation (PDF/Image):</label>
+      <input type="file" name="recommendation" accept=".pdf,.jpg,.jpeg,.png" required>
+      <textarea name="motivation" placeholder="Why do you want to intern with us?" rows="4" required></textarea>
+      <button type="submit">Submit Application</button>
+    </form>
+  </main>
+  <footer>&copy; 2025 Khamsang Hotel</footer>
+</body>
+</html>
