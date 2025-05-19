@@ -1,23 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Feedback</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Send Us Your Feedback</h1>
-    <nav><a href="index.html">Home</a></nav>
-  </header>
-  <main class="container">
-    <form action="https://formspree.io/f/mqaqnryl" method="POST">
-      <input type="text" name="name" placeholder="Your Name">
-      <input type="email" name="email" placeholder="Your Email">
-      <textarea name="message" placeholder="Your Feedback" rows="5" required></textarea>
-      <button type="submit">Send Feedback</button>
-    </form>
-  </main>
-  <footer>&copy; 2025 Khamsang Hotel</footer>
-</body>
-</html>
+<section id="feedback">
+  <h2>Feedback</h2>
+  <p style="text-align:center;">We value your feedback! Please let us know about your experience.</p>
+  <form action="https://formspree.io/f/mqaqnryl" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="_replyto" placeholder="Your Email" required>
+
+    <label for="rating" style="display:block; margin-top:10px;">Rating (1 = Poor, 5 = Excellent):</label>
+    <select name="rating" id="rating" required>
+      <option value="">Choose rating</option>
+      <option value="1">1 ★</option>
+      <option value="2">2 ★★</option>
+      <option value="3">3 ★★★</option>
+      <option value="4">4 ★★★★</option>
+      <option value="5">5 ★★★★★</option>
+    </select>
+
+    <label for="visit-date" style="display:block; margin-top:10px;">Date of Visit:</label>
+    <input type="date" id="visit-date" name="visit_date" required>
+
+    <textarea name="message" rows="5" placeholder="Your Feedback" required></textarea>
+
+    <!-- Optional Redirect URL (replace the value with your custom thank you page if needed) -->
+    <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html">
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+</section>
